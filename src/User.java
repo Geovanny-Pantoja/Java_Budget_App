@@ -1,3 +1,12 @@
+/*****************
+ * Name: Geovanny Pantoja
+ * Date: 23 March 2026  
+ * Description: This class represents the User component of the Budget Tracker application. It defines the structure and properties of a user, including their username and associated budget.
+ * The class implements the Persistable interface, allowing it to be easily saved and loaded from storage.
+ * It includes methods for getting and setting the username, as well as a method to retrieve the user's budget.
+ * The User class is essential for managing individual users within the application, allowing each user to have their own budget and associated transactions, categories, and allocations.
+ * It serves as the primary entity for user management and data organization within the Budget Tracker application.
+ */
 public class User implements Persistable{
 
     private int id;
@@ -21,6 +30,11 @@ public class User implements Persistable{
     }
     public void setUsername(String username) {
         this.username = username;
+    }
+    @Override
+    public String toString() {
+        
+        return "User: " + username;
     }
 
     
