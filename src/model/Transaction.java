@@ -1,3 +1,4 @@
+package model;
 /**********************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026
@@ -10,20 +11,40 @@
 public abstract class Transaction implements Persistable{
 
     private int id;
+    private int user_id;    
     private double amount;
     private String description;
     private String date;
 
-    public Transaction(double amount, String descritption, String date){
-        this.amount = amount;
-        this.description = descritption;
-        this.date = date;
-
+    public Transaction() {
     }
+
+    public Transaction(int id, int user_id,  double amount, String description, String date) {
+        setId(id);
+        this.user_id = user_id;        
+        this.amount = amount;   
+        this.description = description;
+        this.date = date;
+    }
+
+    
+    public Transaction(int user_id, double amount, String description, String date) {
+        this.user_id = user_id;        
+        setAmount(amount);        
+        setDescription(description);
+        setDate(date);
+    }
+
     @Override
     public int getId() {
         return id;
     }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+  
 
     public String getDescription() {
         return description;
@@ -35,6 +56,19 @@ public abstract class Transaction implements Persistable{
 
     public double getAmount() {
         return amount;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+    public void setDate(String date) {
+        this.date = date;
+    }
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public abstract double getNetAmount();    

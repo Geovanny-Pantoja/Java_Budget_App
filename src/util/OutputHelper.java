@@ -1,3 +1,4 @@
+package util;
 /*****************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026
@@ -25,9 +26,11 @@ public class OutputHelper {
         System.out.println("1. List users");
         System.out.println("2. Create user");
         System.out.println("3. Select user");
-        System.out.println("4. exit");        
+        System.out.println("4. Update User");
+        System.out.println("5. Delete User");
+        System.out.println("6. exit");        
     }
-    public void showUserMenu(String username) {
+    public void showUserDashboardMenu(String username) {
         printSection("Budget management for " + username);  
         printBudgetMenuInstructions(); 
         printDivider();
@@ -37,7 +40,7 @@ public class OutputHelper {
         System.out.println("3. Add expense");
         System.out.println("4. Manage Category allocations");
         System.out.println("5. Manage categories");
-        System.out.println("6. View transactions");
+        System.out.println("6. View transactions");        
         System.out.println("7. Back to main menu");
         System.out.print("Choose an option: ");
     }
@@ -47,8 +50,9 @@ public class OutputHelper {
         printCategoryMenuInstructions();
         printDivider();
         System.out.println("1. List categories");
-        System.out.println("2. Add category");        
-        System.out.println("3. Back");
+        System.out.println("2. Add category"); 
+        System.out.println("3. Update category");       
+        System.out.println("4. Back");
         System.out.print("Choose an option: ");
     }
 

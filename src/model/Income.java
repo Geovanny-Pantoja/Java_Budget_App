@@ -1,3 +1,4 @@
+package model;
 /*************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026
@@ -5,8 +6,14 @@
  */
 public class Income extends Transaction {
 
-    public Income(double amount, String description, String date){
-        super(amount, description, date);
+    public Income() {
+    }
+    public Income(int id, int user_id, double amount, String description, String date) {
+        super(id, user_id, amount, description, date);
+    }
+
+    public Income(int user_id, double amount, String description, String date){
+        super(user_id, amount, description, date);
     }
     @Override
     public double getNetAmount(){

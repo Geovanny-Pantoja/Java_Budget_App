@@ -1,3 +1,4 @@
+package model;
 /**************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026
@@ -12,6 +13,15 @@ public class Category implements Persistable{
     private String name;
     private String description;
 
+    public Category() {
+    }
+
+    public Category(int id, String name, String description) {
+        setId(id);
+        setName(name);
+        setDescription(description);
+    }
+
     public Category(String name, String description) {
            setName(name);
            setDescription(description);
@@ -19,6 +29,10 @@ public class Category implements Persistable{
     @Override
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

@@ -1,3 +1,6 @@
+package model;
+
+import manager.Budget;
 /*****************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026  
@@ -11,17 +14,32 @@ public class User implements Persistable{
 
     private int id;
     private String username;
-    private Budget budget;
+    private Budget budget; // in memory representation of the user's budget    
+
+    public User() {
+        
+    }
+
+    public User(int id, String username) {
+        setId(id);
+        setUsername(username);
+       
+    }
 
     public User(String username) {
         setUsername(username);
-        this.budget = new Budget(); 
+       
     }
 
     @Override
     public int getId() {
         return id;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -31,6 +49,11 @@ public class User implements Persistable{
     public void setUsername(String username) {
         this.username = username;
     }
+
+    public void setBudget(Budget budget) {
+        this.budget = budget;
+    }
+   
     @Override
     public String toString() {
         

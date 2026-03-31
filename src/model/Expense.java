@@ -1,3 +1,4 @@
+package model;
 /*************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026  
@@ -7,8 +8,15 @@
  */
 public class Expense extends Transaction {
 
-    public Expense(double amount, String description, String date ) {
-        super(amount, description, date);
+    public Expense() {
+    }
+
+    public Expense(int id, int user_id, double amount, String description, String date) {
+        super(id, user_id, amount, description, date);
+    }
+
+    public Expense(int user_id, double amount, String description, String date ) {
+        super(user_id, amount, description, date);
         
     }
 

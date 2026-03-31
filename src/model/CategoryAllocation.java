@@ -1,3 +1,4 @@
+package model;
 /***************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026
@@ -8,22 +9,57 @@
  */
 public class CategoryAllocation implements Persistable {
     private int id;
-    private String categoryName;
+    private int user_id;
+    private int category_id;    
     private double allocatedAmount;
+    private String categoryName; // Add this for convenience
 
-    public CategoryAllocation(String categoryName, double allocatedAmount) {
-        this.categoryName = categoryName;
+    public CategoryAllocation() {
+    }
+
+    public CategoryAllocation(int id, int user_id, int category_id, double allocatedAmount) {
+        setId(id);
+        this.user_id = user_id;
+        this.category_id = category_id;
         this.allocatedAmount = allocatedAmount;
+    }
+
+    public CategoryAllocation(int user_id, int category_id, double allocatedAmount) {
+        this.user_id = user_id;
+        this.category_id = category_id;
+        this.allocatedAmount = allocatedAmount;
+    }
+
+    public CategoryAllocation(int user_id, int category_id, double allocatedAmount, String categoryName) {
+        this.user_id = user_id;
+        this.category_id = category_id;
+        this.allocatedAmount = allocatedAmount;
+        this.categoryName = categoryName;
     }
     @Override
     public int getId() {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+    public int getCategory_id() {
+        return category_id;
+    }
+    
     public String getCategoryName() {
         return categoryName;
     }
 
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+    
     public double getAllocatedAmount() {
         return allocatedAmount;
     }

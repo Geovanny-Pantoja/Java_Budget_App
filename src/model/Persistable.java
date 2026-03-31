@@ -1,3 +1,4 @@
+package model;
 /****************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026

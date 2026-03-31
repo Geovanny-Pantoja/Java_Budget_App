@@ -1,3 +1,7 @@
+package util;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 /*************
  * Name: Geovanny Pantoja
  * Date: 23 March 2026
@@ -7,6 +11,7 @@
  * The InputHelper class is essential for ensuring that user input is properly validated and processed, contributing to a smooth and user-friendly experience in the application.
  */
 import java.util.Scanner;
+
 public class InputHelper {
 
     private Scanner scanner;
@@ -24,6 +29,18 @@ public class InputHelper {
         }
 
         return input;
+    }
+
+    public String getValidDate(String prompt) {
+        while (true) {
+            String input = getRequiredString(prompt);
+            try {
+                LocalDate.parse(input, DateTimeFormatter.ISO_LOCAL_DATE);
+                return input;
+            } catch (Exception e) {
+                System.out.println("Invalid date format. Please enter in YYYY-MM-DD format.");
+            }
+        }
     }
 
     public double getPositiveDouble(String prompt) {
@@ -53,7 +70,7 @@ public class InputHelper {
     }
 
     public void waitForEnter() {
-        scanner.nextLine(); 
+        scanner.nextLine();
     }
 
 }
