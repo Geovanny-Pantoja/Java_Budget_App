@@ -1,7 +1,7 @@
 package model;
 /***************
  * Name: Geovanny Pantoja
- * Date: 23 March 2026
+ * Date: 29 March 2026
  * Description: This class represents the CategoryAllocation component of the Budget Tracker application.
  * It defines the structure and properties of a category allocation,
  * including the category name and the allocated amount. The class implements the Persistable interface, allowing it to be easily saved and loaded from storage.

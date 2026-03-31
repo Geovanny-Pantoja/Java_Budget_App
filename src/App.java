@@ -7,20 +7,16 @@ import dao.ExpenseDAO;
 import dao.IncomeDAO;
 import dao.UserDAO;
 import manager.AllocationsManager;
-import manager.Budget;
 import manager.CategoryManager;
 import manager.TransactionManager;
 import manager.UserManager;
 import model.Category;
-import model.CategoryAllocation;
-import model.Transaction;
-import model.User;
 import util.InputHelper;
 import util.OutputHelper;
 
 /********
  * Name: Geovanny Pantoja
- * Date: 23 March 2026
+ * Date: 29 March 2026
  * Description: This is the main class of the Budget Tracker application. It serves as the entry point and manages the overall flow of the program. It interacts with the UserManager,
  * CategoryManager, InputHelper, and OutputHelper classes to provide a seamless user experience for managing budgets, categories, and transactions.
  * The main method initializes the necessary components and enters a loop to display the main menu, allowing users to list users, create new users, select existing users, and exit the application.

@@ -1,3 +1,12 @@
+/*********************************
+ * Name: Geovanny Pantoja
+ * Date: 29 March 2026
+ * Description: This class represents the UserController component of the Budget Tracker application. 
+ * It serves as the main controller for user interactions, managing the flow of the application and coordinating between the UserManager, CategoryManager, TransactionManager, and AllocationsManager.
+ * The UserController handles the main menu and user dashboard, allowing users to view their budget summary, add income and expenses, manage category allocations, and view transactions. 
+ * It also provides methods for managing categories and handling user input for various actions within the application.
+ * The class is responsible for ensuring that the user interface is responsive and that user actions are properly
+ */
 package Controllers;
 
 import manager.AllocationsManager;
@@ -6,7 +15,6 @@ import manager.CategoryManager;
 import manager.TransactionManager;
 import manager.UserManager;
 import model.CategoryAllocation;
-import model.Transaction;
 import model.User;
 import model.Category;
 import util.InputHelper;

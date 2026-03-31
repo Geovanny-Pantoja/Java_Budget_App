@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 /*************
  * Name: Geovanny Pantoja
- * Date: 23 March 2026  
+ * Date: 29 March 2026  
  * Description: This class represents the Budget component of the Budget Tracker application. It manages the user's transactions, category allocations, and provides methods to add income and expenses,
  * move money between categories, and generate a budget summary. The class interacts with the CategoryManager to ensure that category allocations are properly managed and updated based on user actions.
  * It also includes methods to handle user input for adding transactions and managing category allocations, ensuring that the budget remains accurate and up-to-date.

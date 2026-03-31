@@ -1,7 +1,7 @@
 package model;
 /****************
  * Name: Geovanny Pantoja
- * Date: 23 March 2026
+ * Date: 29 March 2026
  * Description: This interface represents the Persistable component of the Budget Tracker application.
  * It defines a contract for any class that implements it, requiring them to provide a method to retrieve a unique identifier (ID).
  * This allows for consistent handling of objects that need to be saved and loaded from storage, ensuring that each object can be uniquely identified and managed within the application's data persistence layer.

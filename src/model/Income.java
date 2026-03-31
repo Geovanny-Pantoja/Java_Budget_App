@@ -1,7 +1,7 @@
 package model;
 /*************
  * Name: Geovanny Pantoja
- * Date: 23 March 2026
+ * Date: 29 March 2026
  * Description: This class represents the Income component of the Budget Tracker application. It extends the Transaction class and provides a specific implementation for income transactions.
  */
 public class Income extends Transaction {

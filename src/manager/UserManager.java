@@ -1,6 +1,6 @@
 /********************
  * Name: Geovanny Pantoja
- * Date: 23 March 2026
+ * Date: 29 March 2026
  * Description: This class represents the UserManager component of the Budget Tracker application.
  */
 package manager;
@@ -10,18 +10,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Category;
-import model.CategoryAllocation;
-import model.Transaction;
 import model.User;
 import util.InputHelper;
 import dao.CategoryAllocationDAO;
-import dao.CategoryDAO;
+
 import dao.ExpenseDAO;
 import dao.IncomeDAO;
 import dao.UserDAO;
-import manager.Budget;
-import manager.CategoryManager;
+
 
 public class UserManager {
 

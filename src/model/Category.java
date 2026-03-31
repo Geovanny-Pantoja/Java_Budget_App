@@ -1,7 +1,7 @@
 package model;
 /**************
  * Name: Geovanny Pantoja
- * Date: 23 March 2026
+ * Date: 29 March 2026
  * Description: This class represents the Category component of the Budget Tracker application. It defines the structure and properties of a category,
  * including its name and description. The class implements the Persistable interface, allowing it to be easily saved and loaded from storage.
  * It includes methods for getting and setting the category's name and description, as well as a toString method for displaying category information in a user-friendly format.

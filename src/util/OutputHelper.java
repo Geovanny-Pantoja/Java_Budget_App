@@ -1,7 +1,12 @@
 package util;
 /*****************
  * Name: Geovanny Pantoja
- * Date: 23 March 2026
+ * Date: 29 March 2026
+ * Description: This class represents the OutputHelper component of the Budget Tracker application. 
+ * It provides methods for displaying various menus and prompts to the user, as well as a method for clearing the console screen. 
+ * The OutputHelper class is responsible for ensuring that the user interface is clear and easy to navigate, allowing users to interact with the application effectively.
+ * It includes methods for showing the main menu, user dashboard menu, category management menu, and allocation management menu, 
+ * as well as methods for printing dividers and pausing the output until the user is ready to continue.
  * 
  */
 public class OutputHelper {
