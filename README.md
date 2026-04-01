@@ -101,6 +101,5 @@ These OOP features work together to create a clean architecture where responsibi
 ## Link to Project
 Budget Tracker Repository (https://github.com/username/budget-tracker)
 
-## License
-This project is licensed under the GNU License — see the `LICENSE` file for details.
+
 
