@@ -5,6 +5,9 @@ Budget Tracker is a Java console application that allows users to manage their p
 The system supports multiple users, persistent data storage using SQLite, and a structured menu‑driven interface.  
 The project demonstrates strong Object‑Oriented Programming (OOP) principles throughout its design and implementation.
 
+## Video Demo
+- https://youtu.be/BOioEvPeOW0
+
 ## How OOP Features Were Integrated
 The Budget Tracker was intentionally built using core OOP concepts to create a modular, maintainable, and scalable application:
 
